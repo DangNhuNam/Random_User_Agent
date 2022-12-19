@@ -6,9 +6,7 @@ public static function User_Agent() {
              if (!$fp) {
                 die('Sai đường dẫn vui lòng kiểm tra lại');
              } else {
-// Đọc từng dòng
-              while(!feof($fp))
-             {
+              while(!feof($fp)) {
               $ua[] = fgets($fp);
              }
               fclose($fp);
